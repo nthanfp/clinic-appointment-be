@@ -8,7 +8,7 @@ import dbUtil from './utils/db.js';
 import JsonException from './utils/JsonException.js';
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 80;
 
 // cors options
 const whitelist = ['http://localhost:8000', 'http://localhost:8080', 'http://localhost:3000'];
