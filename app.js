@@ -49,6 +49,6 @@ app.all('*', (req, res, next) => {
     next(error);
 });
 
-app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`App listening at http://localhost:${PORT}`);
 });
