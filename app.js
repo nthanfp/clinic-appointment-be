@@ -11,7 +11,12 @@ const app = express();
 const PORT = process.env.PORT || 80;
 
 // cors options
-const whitelist = ['http://localhost:8000', 'http://localhost:8080', 'http://localhost:3000'];
+const whitelist = [
+    'http://localhost:8000',
+    'http://localhost:8080',
+    'http://localhost:3000',
+    'https://clinic-appointment-fe.vercel.app',
+];
 const corsOptions = {
     origin: function (origin, callback) {
         if (whitelist.indexOf(origin) !== -1) {
